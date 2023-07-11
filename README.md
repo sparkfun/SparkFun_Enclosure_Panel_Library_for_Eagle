@@ -30,7 +30,7 @@ This Eagle library contains the holes and cut-outs for:
 How To Use
 -------------------
 
-The library contains the holes and cut-outs as standard Eagle components. Each part has both a symbol and a 'footprint'. You don't really need the schematic symbols but we included them anyway.
+The library contains the holes and cut-outs as standard Eagle parts. Each part has both a symbol and a 'footprint'. You don't really need the schematic symbols but we included them anyway.
 
 The 'footprints' are all referenced to the top surface of the PCB. Align the origins horizontally, space them according to your design, and go get your panels made!
 
