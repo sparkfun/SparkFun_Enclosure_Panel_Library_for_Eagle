@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="63" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="PANEL_OUTLINE">
+<description>&lt;b&gt;Panel Outline&lt;/b&gt;
+&lt;br&gt;Centered on the top surface of the PCB</description>
+<wire x1="-79.3" y1="-4.25" x2="-79.3" y2="0" width="0.2" layer="51"/>
+<wire x1="-79.3" y1="0" x2="-79.3" y2="29.25" width="0.2" layer="51"/>
+<wire x1="-79.3" y1="29.25" x2="-75.55" y2="33" width="0.2" layer="51" curve="-90"/>
+<wire x1="-75.55" y1="33" x2="75.55" y2="33" width="0.2" layer="51"/>
+<wire x1="75.55" y1="33" x2="79.3" y2="29.25" width="0.2" layer="51" curve="-90"/>
+<wire x1="79.3" y1="29.25" x2="79.3" y2="0" width="0.2" layer="51"/>
+<wire x1="79.3" y1="0" x2="79.3" y2="-4.25" width="0.2" layer="51"/>
+<wire x1="79.3" y1="-4.25" x2="75.55" y2="-8" width="0.2" layer="51" curve="-90"/>
+<wire x1="75.55" y1="-8" x2="-75.55" y2="-8" width="0.2" layer="51"/>
+<wire x1="-75.55" y1="-8" x2="-79.3" y2="-4.25" width="0.2" layer="51" curve="-90"/>
+<circle x="-75.4" y="29.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="75.4" y="29.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="75.4" y="-4.25" radius="1.5" width="0.2" layer="51"/>
+<circle x="-75.4" y="-4.25" radius="1.5" width="0.2" layer="51"/>
+<wire x1="-79.3" y1="0" x2="79.3" y2="0" width="0.2" layer="51" style="dashdot"/>
+<hole x="-75.4" y="29.25" drill="3.4"/>
+<hole x="75.4" y="29.25" drill="3.4"/>
+<hole x="75.4" y="-4.25" drill="3.4"/>
+<hole x="-75.4" y="-4.25" drill="3.4"/>
+<dimension x1="-79.3" y1="-4.25" x2="79.3" y2="-4.25" x3="0" y3="-18" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="-75.55" y1="-8" x2="-75.55" y2="33" x3="-83" y3="12.5" textsize="1.27" layer="47" dtype="vertical"/>
+<dimension x1="-75.55" y1="29.25" x2="-78.044521875" y2="32.049975" x3="-76.797259375" y3="30.6499875" textsize="1.27" layer="47" dtype="radius"/>
+<dimension x1="-76.40159375" y1="30.6236125" x2="-74.39840625" y2="27.8763875" x3="-73.000003125" y3="31" textsize="1.27" layer="47" dtype="diameter"/>
+<dimension x1="0" y1="-8" x2="0" y2="0" x3="-7" y3="-4" textsize="1.27" layer="47" dtype="vertical"/>
+<dimension x1="-75.4" y1="-4.25" x2="75.4" y2="-4.25" x3="0" y3="-13" textsize="1.27" layer="47" dtype="horizontal"/>
+<dimension x1="75.4" y1="-4.25" x2="75.4" y2="29.25" x3="83" y3="12.5" textsize="1.27" layer="47" dtype="vertical"/>
+<text x="0" y="-20" size="1.27" layer="47" font="vector" align="bottom-center">Dimensions in mm</text>
+</package>
+<package name="LED">
+<hole x="0" y="3.1" drill="5.5"/>
+<circle x="0" y="3.1" radius="2.5" width="0.2" layer="51"/>
+</package>
+<package name="BUTTON">
+<hole x="0" y="4.05" drill="3.75"/>
+<circle x="0" y="4.05" radius="1.7" width="0.2" layer="51"/>
+</package>
+<package name="MICRO_SD">
+<wire x1="-7.35" y1="0" x2="7.35" y2="0" width="0.2" layer="51"/>
+<wire x1="7.35" y1="0" x2="7.35" y2="2" width="0.2" layer="51"/>
+<wire x1="7.35" y1="2" x2="-7.35" y2="2" width="0.2" layer="51"/>
+<wire x1="-7.35" y1="2" x2="-7.35" y2="0" width="0.2" layer="51"/>
+<wire x1="-6.85" y1="2.5" x2="6.85" y2="2.5" width="0.2" layer="20"/>
+<wire x1="6.85" y1="2.5" x2="7.85" y2="1.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="7.85" y1="1.5" x2="7.85" y2="0.5" width="0.2" layer="20"/>
+<wire x1="7.85" y1="0.5" x2="6.85" y2="-0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="6.85" y1="-0.5" x2="-6.85" y2="-0.5" width="0.2" layer="20"/>
+<wire x1="-6.85" y1="-0.5" x2="-7.85" y2="0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="-7.85" y1="0.5" x2="-7.85" y2="1.5" width="0.2" layer="20"/>
+<wire x1="-7.85" y1="1.5" x2="-6.85" y2="2.5" width="0.2" layer="20" curve="-90"/>
+<text x="0" y="0" size="1.27" layer="20" align="bottom-center">Route Out</text>
+</package>
+<package name="USB-C">
+<wire x1="-3.5" y1="3.45" x2="3.5" y2="3.45" width="0.2" layer="20"/>
+<wire x1="3.5" y1="3.45" x2="4.75" y2="2.2" width="0.2" layer="20" curve="-90"/>
+<wire x1="4.75" y1="2.2" x2="4.75" y2="1" width="0.2" layer="20"/>
+<wire x1="4.75" y1="1" x2="3.5" y2="-0.25" width="0.2" layer="20" curve="-90"/>
+<wire x1="3.5" y1="-0.25" x2="-3.5" y2="-0.25" width="0.2" layer="20"/>
+<wire x1="-3.5" y1="-0.25" x2="-4.75" y2="1" width="0.2" layer="20" curve="-90"/>
+<wire x1="-4.75" y1="1" x2="-4.75" y2="2.2" width="0.2" layer="20"/>
+<wire x1="-4.75" y1="2.2" x2="-3.5" y2="3.45" width="0.2" layer="20" curve="-90"/>
+<text x="0" y="1.5" size="1.27" layer="20" align="center">Route Out</text>
+<wire x1="-3.5" y1="3.2" x2="3.5" y2="3.2" width="0.2" layer="51"/>
+<wire x1="3.5" y1="3.2" x2="4.5" y2="2.2" width="0.2" layer="51" curve="-90"/>
+<wire x1="4.5" y1="2.2" x2="4.5" y2="1" width="0.2" layer="51"/>
+<wire x1="4.5" y1="1" x2="3.5" y2="0" width="0.2" layer="51" curve="-90"/>
+<wire x1="3.5" y1="0" x2="-3.5" y2="0" width="0.2" layer="51"/>
+<wire x1="-3.5" y1="0" x2="-4.5" y2="1" width="0.2" layer="51" curve="-90"/>
+<wire x1="-4.5" y1="1" x2="-4.5" y2="2.2" width="0.2" layer="51"/>
+<wire x1="-4.5" y1="2.2" x2="-3.5" y2="3.2" width="0.2" layer="51" curve="-90"/>
+</package>
+<package name="OLED">
+<wire x1="-6.7" y1="5" x2="6.7" y2="5" width="0.2" layer="51"/>
+<wire x1="6.7" y1="5" x2="6.7" y2="-5" width="0.2" layer="51"/>
+<wire x1="6.7" y1="-5" x2="-6.7" y2="-5" width="0.2" layer="51"/>
+<wire x1="-6.7" y1="-5" x2="-6.7" y2="5" width="0.2" layer="51"/>
+<wire x1="-7.7" y1="-5" x2="-7.7" y2="5" width="0.2" layer="51"/>
+<wire x1="-7.7" y1="5" x2="-6.7" y2="6" width="0.2" layer="51" curve="-90"/>
+<wire x1="-6.7" y1="6" x2="6.7" y2="6" width="0.2" layer="51"/>
+<wire x1="6.7" y1="6" x2="7.7" y2="5" width="0.2" layer="51" curve="-90"/>
+<wire x1="7.7" y1="5" x2="7.7" y2="-5" width="0.2" layer="51"/>
+<wire x1="7.7" y1="-5" x2="6.7" y2="-6" width="0.2" layer="51" curve="-90"/>
+<wire x1="6.7" y1="-6" x2="-6.7" y2="-6" width="0.2" layer="51"/>
+<wire x1="-6.7" y1="-6" x2="-7.7" y2="-5" width="0.2" layer="51" curve="-90"/>
+<text x="0" y="0" size="1.27" layer="20" align="center">Route Out</text>
+<wire x1="-9.4" y1="7.35" x2="9.4" y2="7.35" width="0.2" layer="20"/>
+<wire x1="-9.4" y1="7.35" x2="-9.4" y2="4.35" width="0.2" layer="20" curve="180"/>
+<wire x1="9.4" y1="4.35" x2="9.4" y2="7.35" width="0.2" layer="20" curve="180"/>
+<wire x1="-9.4" y1="-8.05" x2="-9.4" y2="-11.05" width="0.2" layer="20" curve="180"/>
+<wire x1="9.4" y1="-11.05" x2="9.4" y2="-8.05" width="0.2" layer="20" curve="180"/>
+<text x="-6" y="4" size="0.5" layer="51">13.42 x 10.06 A/A</text>
+<text x="-6" y="6.3" size="0.5" layer="51">15.42 x 12.06 V/A</text>
+<wire x1="-9.4" y1="4.35" x2="-9.4" y2="-8.05" width="0.2" layer="20"/>
+<wire x1="9.4" y1="4.35" x2="9.4" y2="-8.05" width="0.2" layer="20"/>
+<wire x1="-9.4" y1="-11.05" x2="-7" y2="-11.05" width="0.2" layer="20"/>
+<wire x1="7" y1="-11.05" x2="9.4" y2="-11.05" width="0.2" layer="20"/>
+<wire x1="-7" y1="-11.05" x2="-7" y2="-12.7" width="0.2" layer="20"/>
+<wire x1="7" y1="-11.05" x2="7" y2="-12.7" width="0.2" layer="20"/>
+<wire x1="-7" y1="-12.7" x2="-5.5" y2="-14.2" width="0.2" layer="20" curve="90"/>
+<wire x1="5.5" y1="-14.2" x2="7" y2="-12.7" width="0.2" layer="20" curve="90"/>
+<wire x1="-5.5" y1="-14.2" x2="5.5" y2="-14.2" width="0.2" layer="20"/>
+</package>
+<package name="SMA">
+<hole x="0" y="0.635" drill="8.75"/>
+<circle x="0" y="0.635" radius="3.965" width="0.2" layer="51"/>
+</package>
+<package name="3.5MM_CONNECTOR">
+<wire x1="-18.15" y1="0" x2="18.15" y2="0" width="0.2" layer="51"/>
+<wire x1="18.15" y1="0" x2="18.15" y2="7.2" width="0.2" layer="51"/>
+<wire x1="18.15" y1="7.2" x2="-18.15" y2="7.2" width="0.2" layer="51"/>
+<wire x1="-18.15" y1="7.2" x2="-18.15" y2="0" width="0.2" layer="51"/>
+<wire x1="-17.65" y1="7.7" x2="17.65" y2="7.7" width="0.2" layer="20"/>
+<wire x1="17.65" y1="7.7" x2="18.65" y2="6.7" width="0.2" layer="20" curve="-90"/>
+<wire x1="18.65" y1="6.7" x2="18.65" y2="0.5" width="0.2" layer="20"/>
+<wire x1="18.65" y1="0.5" x2="17.65" y2="-0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="17.65" y1="-0.5" x2="-17.65" y2="-0.5" width="0.2" layer="20"/>
+<wire x1="-17.65" y1="-0.5" x2="-18.65" y2="0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="-18.65" y1="0.5" x2="-18.65" y2="6.7" width="0.2" layer="20"/>
+<wire x1="-18.65" y1="6.7" x2="-17.65" y2="7.7" width="0.2" layer="20" curve="-90"/>
+<text x="0" y="0" size="1.27" layer="20" align="bottom-center">Route Out</text>
+<wire x1="-1.75" y1="6.9" x2="-2.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-2.05" y1="6.3" x2="-1.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-1.45" y1="6.3" x2="-1.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="1.75" y1="6.9" x2="1.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="1.45" y1="6.3" x2="2.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="2.05" y1="6.3" x2="1.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="-5.25" y1="6.9" x2="-5.55" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-5.55" y1="6.3" x2="-4.95" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-4.95" y1="6.3" x2="-5.25" y2="6.9" width="0.2" layer="51"/>
+<wire x1="-8.75" y1="6.9" x2="-9.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-9.05" y1="6.3" x2="-8.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-8.45" y1="6.3" x2="-8.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="-12.25" y1="6.9" x2="-12.55" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-12.55" y1="6.3" x2="-11.95" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-11.95" y1="6.3" x2="-12.25" y2="6.9" width="0.2" layer="51"/>
+<wire x1="-15.75" y1="6.9" x2="-16.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-16.05" y1="6.3" x2="-15.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="-15.45" y1="6.3" x2="-15.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="15.75" y1="6.9" x2="15.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="15.45" y1="6.3" x2="16.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="16.05" y1="6.3" x2="15.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="12.25" y1="6.9" x2="11.95" y2="6.3" width="0.2" layer="51"/>
+<wire x1="11.95" y1="6.3" x2="12.55" y2="6.3" width="0.2" layer="51"/>
+<wire x1="12.55" y1="6.3" x2="12.25" y2="6.9" width="0.2" layer="51"/>
+<wire x1="8.75" y1="6.9" x2="8.45" y2="6.3" width="0.2" layer="51"/>
+<wire x1="8.45" y1="6.3" x2="9.05" y2="6.3" width="0.2" layer="51"/>
+<wire x1="9.05" y1="6.3" x2="8.75" y2="6.9" width="0.2" layer="51"/>
+<wire x1="5.25" y1="6.9" x2="4.95" y2="6.3" width="0.2" layer="51"/>
+<wire x1="4.95" y1="6.3" x2="5.55" y2="6.3" width="0.2" layer="51"/>
+<wire x1="5.55" y1="6.3" x2="5.25" y2="6.9" width="0.2" layer="51"/>
+</package>
+<package name="ETHERNET">
+<wire x1="-8.13" y1="0" x2="8.13" y2="0" width="0.2" layer="51"/>
+<wire x1="8.13" y1="0" x2="8.13" y2="13.84" width="0.2" layer="51"/>
+<wire x1="8.13" y1="13.84" x2="-8.13" y2="13.84" width="0.2" layer="51"/>
+<wire x1="-8.13" y1="13.84" x2="-8.13" y2="0" width="0.2" layer="51"/>
+<wire x1="-7.63" y1="14.34" x2="7.63" y2="14.34" width="0.2" layer="20"/>
+<wire x1="7.63" y1="14.34" x2="8.63" y2="13.34" width="0.2" layer="20" curve="-90"/>
+<wire x1="8.63" y1="13.34" x2="8.63" y2="0.5" width="0.2" layer="20"/>
+<wire x1="8.63" y1="0.5" x2="7.63" y2="-0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="7.63" y1="-0.5" x2="-7.63" y2="-0.5" width="0.2" layer="20"/>
+<wire x1="-7.63" y1="-0.5" x2="-8.63" y2="0.5" width="0.2" layer="20" curve="-90"/>
+<wire x1="-8.63" y1="0.5" x2="-8.63" y2="13.34" width="0.2" layer="20"/>
+<wire x1="-8.63" y1="13.34" x2="-7.63" y2="14.34" width="0.2" layer="20" curve="-90"/>
+<text x="0" y="0" size="1.27" layer="20" align="bottom-center">Route Out</text>
+</package>
+<package name="NANO_SIM">
+<wire x1="-4.995" y1="0" x2="7.295" y2="0" width="0.2" layer="51"/>
+<wire x1="7.295" y1="0" x2="7.295" y2="1.37" width="0.2" layer="51"/>
+<wire x1="7.295" y1="1.37" x2="4.475" y2="1.37" width="0.2" layer="51"/>
+<wire x1="4.475" y1="1.37" x2="-4.475" y2="1.37" width="0.2" layer="51"/>
+<wire x1="-4.475" y1="1.37" x2="-4.995" y2="1.37" width="0.2" layer="51"/>
+<wire x1="-4.995" y1="1.37" x2="-4.995" y2="0" width="0.2" layer="51"/>
+<wire x1="-4.475" y1="1.975" x2="4.475" y2="1.975" width="0.2" layer="20"/>
+<wire x1="4.475" y1="1.975" x2="5.475" y2="0.975" width="0.2" layer="20" curve="-90"/>
+<wire x1="5.475" y1="0.975" x2="4.475" y2="-0.025" width="0.2" layer="20" curve="-90"/>
+<wire x1="4.475" y1="-0.025" x2="-4.475" y2="-0.025" width="0.2" layer="20"/>
+<wire x1="-4.475" y1="-0.025" x2="-5.475" y2="0.975" width="0.2" layer="20" curve="-90"/>
+<wire x1="-5.475" y1="0.975" x2="-4.475" y2="1.975" width="0.2" layer="20" curve="-90"/>
+<text x="0" y="0.4" size="1.27" layer="20" align="bottom-center">Route Out</text>
+<wire x1="-4.475" y1="0.58" x2="4.475" y2="0.58" width="0.2" layer="51"/>
+<wire x1="-4.475" y1="0.58" x2="-4.475" y2="1.37" width="0.2" layer="51"/>
+<wire x1="4.475" y1="0.58" x2="4.475" y2="1.37" width="0.2" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PANEL_OUTLINE">
+<description>Panel Outline</description>
+<wire x1="-79.3" y1="-4.25" x2="-79.3" y2="29.25" width="0.254" layer="94"/>
+<wire x1="-79.3" y1="29.25" x2="-75.55" y2="33" width="0.254" layer="94" curve="-90"/>
+<wire x1="-75.55" y1="33" x2="75.55" y2="33" width="0.254" layer="94"/>
+<wire x1="75.55" y1="33" x2="79.3" y2="29.25" width="0.254" layer="94" curve="-90"/>
+<wire x1="79.3" y1="29.25" x2="79.3" y2="-4.25" width="0.254" layer="94"/>
+<wire x1="79.3" y1="-4.25" x2="75.55" y2="-8" width="0.254" layer="94" curve="-90"/>
+<wire x1="75.55" y1="-8" x2="-75.55" y2="-8" width="0.254" layer="94"/>
+<wire x1="-75.55" y1="-8" x2="-79.3" y2="-4.25" width="0.254" layer="94" curve="-90"/>
+<circle x="-75.55" y="29.25" radius="1.5" width="0.2" layer="94"/>
+<circle x="75.55" y="29.25" radius="1.5" width="0.2" layer="94"/>
+<circle x="-75.55" y="-4.25" radius="1.5" width="0.2" layer="94"/>
+<circle x="75.55" y="-4.25" radius="1.5" width="0.2" layer="94"/>
+</symbol>
+<symbol name="LED">
+<circle x="0" y="3" radius="2.5" width="0.2" layer="94"/>
+</symbol>
+<symbol name="BUTTON">
+<circle x="0" y="4.05" radius="1.7" width="0.2" layer="94"/>
+</symbol>
+<symbol name="MICRO_SD">
+<wire x1="-6.85" y1="2.5" x2="6.85" y2="2.5" width="0.2" layer="94"/>
+<wire x1="6.85" y1="2.5" x2="7.85" y2="1.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="7.85" y1="1.5" x2="7.85" y2="0.5" width="0.2" layer="94"/>
+<wire x1="7.85" y1="0.5" x2="6.85" y2="-0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="6.85" y1="-0.5" x2="-6.85" y2="-0.5" width="0.2" layer="94"/>
+<wire x1="-6.85" y1="-0.5" x2="-7.85" y2="0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="-7.85" y1="0.5" x2="-7.85" y2="1.5" width="0.2" layer="94"/>
+<wire x1="-7.85" y1="1.5" x2="-6.85" y2="2.5" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="USB-C">
+<wire x1="-3.5" y1="3.7" x2="3.5" y2="3.7" width="0.2" layer="94"/>
+<wire x1="3.5" y1="3.7" x2="5" y2="2.2" width="0.2" layer="94" curve="-90"/>
+<wire x1="5" y1="2.2" x2="5" y2="1" width="0.2" layer="94"/>
+<wire x1="5" y1="1" x2="3.5" y2="-0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="3.5" y1="-0.5" x2="-3.5" y2="-0.5" width="0.2" layer="94"/>
+<wire x1="-3.5" y1="-0.5" x2="-5" y2="1" width="0.2" layer="94" curve="-90"/>
+<wire x1="-5" y1="1" x2="-5" y2="2.2" width="0.2" layer="94"/>
+<wire x1="-5" y1="2.2" x2="-3.5" y2="3.7" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="OLED">
+<wire x1="-6.5" y1="7" x2="6.5" y2="7" width="0.2" layer="94"/>
+<wire x1="6.5" y1="7" x2="8.5" y2="5" width="0.2" layer="94" curve="-90"/>
+<wire x1="8.5" y1="5" x2="8.5" y2="-5" width="0.2" layer="94"/>
+<wire x1="8.5" y1="-5" x2="6.5" y2="-7" width="0.2" layer="94" curve="-90"/>
+<wire x1="6.5" y1="-7" x2="-6.5" y2="-7" width="0.2" layer="94"/>
+<wire x1="-6.5" y1="-7" x2="-8.5" y2="-5" width="0.2" layer="94" curve="-90"/>
+<wire x1="-8.5" y1="-5" x2="-8.5" y2="5" width="0.2" layer="94"/>
+<wire x1="-8.5" y1="5" x2="-6.5" y2="7" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="SMA">
+<circle x="0" y="0.635" radius="3.965" width="0.2" layer="94"/>
+</symbol>
+<symbol name="3.5MM_CONNECTOR">
+<wire x1="-17.65" y1="7.7" x2="17.65" y2="7.7" width="0.2" layer="94"/>
+<wire x1="17.65" y1="7.7" x2="18.65" y2="6.7" width="0.2" layer="94" curve="-90"/>
+<wire x1="18.65" y1="6.7" x2="18.65" y2="0.5" width="0.2" layer="94"/>
+<wire x1="18.65" y1="0.5" x2="17.65" y2="-0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="17.65" y1="-0.5" x2="-17.65" y2="-0.5" width="0.2" layer="94"/>
+<wire x1="-17.65" y1="-0.5" x2="-18.65" y2="0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="-18.65" y1="0.5" x2="-18.65" y2="6.7" width="0.2" layer="94"/>
+<wire x1="-18.65" y1="6.7" x2="-17.65" y2="7.7" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="ETHERNET">
+<wire x1="-7.13" y1="14.84" x2="7.13" y2="14.84" width="0.2" layer="94"/>
+<wire x1="7.13" y1="14.84" x2="9.13" y2="12.84" width="0.2" layer="94" curve="-90"/>
+<wire x1="9.13" y1="12.84" x2="9.13" y2="0.5" width="0.2" layer="94"/>
+<wire x1="9.13" y1="0.5" x2="8.13" y2="-0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="8.13" y1="-0.5" x2="-8.13" y2="-0.5" width="0.2" layer="94"/>
+<wire x1="-8.13" y1="-0.5" x2="-9.13" y2="0.5" width="0.2" layer="94" curve="-90"/>
+<wire x1="-9.13" y1="0.5" x2="-9.13" y2="12.84" width="0.2" layer="94"/>
+<wire x1="-9.13" y1="12.84" x2="-7.13" y2="14.84" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="NANO_SIM">
+<wire x1="-4.475" y1="1.975" x2="4.475" y2="1.975" width="0.2" layer="94"/>
+<wire x1="4.475" y1="1.975" x2="5.475" y2="0.975" width="0.2" layer="94" curve="-90"/>
+<wire x1="5.475" y1="0.975" x2="4.475" y2="-0.025" width="0.2" layer="94" curve="-90"/>
+<wire x1="4.475" y1="-0.025" x2="-4.475" y2="-0.025" width="0.2" layer="94"/>
+<wire x1="-4.475" y1="-0.025" x2="-5.475" y2="0.975" width="0.2" layer="94" curve="-90"/>
+<wire x1="-5.475" y1="0.975" x2="-4.475" y2="1.975" width="0.2" layer="94" curve="-90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PANEL_OUTLINE">
+<description>&lt;b&gt;Panel Outline&lt;/b&gt;
+&lt;br&gt;
+&lt;br&gt;
+This is the outline of the front and rear panels for the &lt;a href="https://www.sparkfun.com/products/22640"&gt;SparkFun Metal Enclosure - Custom Aluminum Extrusion (6x4in. PCB)&lt;/a&gt;
+&lt;br&gt;
+&lt;br&gt;
+The origin is centered on the top surface of the PCB</description>
+<gates>
+<gate name="G$1" symbol="PANEL_OUTLINE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PANEL_OUTLINE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_DIO-13847">
+<description>This is the enclosure panel cut-out for the 5mm right angle LED (LED-RIGHT-ANGLE-PTH-GREEN, DIO-13847)</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON_SWCH-13896">
+<description>This is the enclosure panel cut-out for the momentary switch (MOMENTARY-SWITCH-SPST-PTH-RIGHT-ANGLE-8-020, SWCH-13896)</description>
+<gates>
+<gate name="G$1" symbol="BUTTON" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BUTTON">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICRO_SD_CONN-16110">
+<description>This is the enclosure panel cut-out for the microSD socket (push-push) (MICRO-SD-PUSH-PUSH-EXT-PIN, CONN-16110)</description>
+<gates>
+<gate name="G$1" symbol="MICRO_SD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICRO_SD">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB-C_CONN-14122">
+<description>This is the enclosure panel cut-out for the &lt;a href="https://www.sparkfun.com/products/15111"&gt;USB-C socket&lt;/a&gt; (CONN-14122)</description>
+<gates>
+<gate name="G$1" symbol="USB-C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB-C">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OLED_14532">
+<description>This is the enclosure panel cut-out for the &lt;a href="https://www.sparkfun.com/products/14532"&gt;micro OLED breakout&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="OLED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OLED">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA_CONN-08289">
+<description>This is the enclosure panel cut-out for the &lt;a href="https://www.sparkfun.com/products/593"&gt;Edge-mount SMA connector&lt;/a&gt; (CONN-08289) and &lt;a href="https://www.sparkfun.com/products/592"&gt;Edge-mount SMA RP connector&lt;/a&gt; (CONN-00827)</description>
+<gates>
+<gate name="G$1" symbol="SMA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.5MM_CONNECTOR_CONN-17279">
+<description>This is the enclosure panel cut-out for the &lt;a href="https://www.sparkfun.com/products/22461"&gt;10-way 3.5mm header&lt;/a&gt; (CONN-17279)</description>
+<gates>
+<gate name="G$1" symbol="3.5MM_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3.5MM_CONNECTOR">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ETHERNET_MAG_JACK_CONN-16253">
+<description>This is the enclosure panel cut-out for the Ethernet mag jack (PoE) (MAGJACK-POE, CONN-16253)</description>
+<gates>
+<gate name="G$1" symbol="ETHERNET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ETHERNET">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NANO_SIM_CONN-16272">
+<description>This is the enclosure panel cut-out for the nano SIM socket (push-push) (NANO_SIM_PP, CONN-16272)</description>
+<gates>
+<gate name="G$1" symbol="NANO_SIM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NANO_SIM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
