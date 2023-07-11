@@ -34,6 +34,10 @@ The library contains the holes and cut-outs as standard Eagle components. Each p
 
 The 'footprints' are all referenced to the top surface of the PCB. Align the origins horizontally, space them according to your design, and go get your panels made!
 
+![PCB Layout](./img/1.png)
+
+![Finished Panel](./img/2.png)
+
 You will find the panels we designed for the Reference Station on the [enclosure product page - documents tab](https://www.sparkfun.com/products/22640)
 and also on [GitHub](https://github.com/sparkfun/SparkFun_RTK_Reference_Station/tree/main/Front_Panel).
 If you want to design your own stickers, you will find those on [GitHub](https://github.com/sparkfun/SparkFun_RTK_Reference_Station/tree/main/Front_Panel_Sticker) too.
