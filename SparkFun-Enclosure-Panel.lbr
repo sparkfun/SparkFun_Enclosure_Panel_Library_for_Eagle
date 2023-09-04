@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -259,6 +259,14 @@
 <wire x1="-4.475" y1="0.58" x2="-4.475" y2="1.37" width="0.2" layer="51"/>
 <wire x1="4.475" y1="0.58" x2="4.475" y2="1.37" width="0.2" layer="51"/>
 </package>
+<package name="CBI_LED_TRIPLE-3MM">
+<hole x="0" y="2.54" drill="3.2"/>
+<circle x="0" y="2.54" radius="1.45" width="0.2" layer="51"/>
+<hole x="0" y="7.62" drill="3.2"/>
+<circle x="0" y="7.62" radius="1.45" width="0.2" layer="51"/>
+<circle x="0" y="12.7" radius="1.45" width="0.2" layer="51"/>
+<hole x="0" y="12.7" drill="3.2"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PANEL_OUTLINE">
@@ -342,6 +350,11 @@
 <wire x1="4.475" y1="-0.025" x2="-4.475" y2="-0.025" width="0.2" layer="94"/>
 <wire x1="-4.475" y1="-0.025" x2="-5.475" y2="0.975" width="0.2" layer="94" curve="-90"/>
 <wire x1="-5.475" y1="0.975" x2="-4.475" y2="1.975" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="CBI_LED_TRIPLE-3MM">
+<circle x="0" y="2.54" radius="1.4478" width="0.2" layer="94"/>
+<circle x="0" y="7.62" radius="1.4478" width="0.2" layer="94"/>
+<circle x="0" y="12.7" radius="1.4478" width="0.2" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -475,6 +488,19 @@ The origin is centered on the top surface of the PCB</description>
 </gates>
 <devices>
 <device name="" package="NANO_SIM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CBI_LED_TRIPLE-3MM_DIO-19990">
+<description>This is the enclosure panel cut-out for the right angle PTH triple-3mm CBI LED (E.g.: Yellow-Green-Red DIO-19990)</description>
+<gates>
+<gate name="G$1" symbol="CBI_LED_TRIPLE-3MM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CBI_LED_TRIPLE-3MM">
 <technologies>
 <technology name=""/>
 </technologies>
