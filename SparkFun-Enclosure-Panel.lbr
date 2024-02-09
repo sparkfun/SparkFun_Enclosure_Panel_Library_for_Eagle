@@ -48,7 +48,7 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -420,6 +420,10 @@
 <wire x1="5.5" y1="-16.7" x2="7.5" y2="-14.7" width="0.2" layer="20" curve="90"/>
 <wire x1="-5.5" y1="-16.7" x2="5.5" y2="-16.7" width="0.2" layer="20"/>
 </package>
+<package name="CBI_RGB_LED">
+<hole x="0" y="3.75" drill="5.5"/>
+<circle x="0" y="3.75" radius="2.5" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PANEL_OUTLINE">
@@ -438,7 +442,7 @@
 <circle x="75.55" y="-4.25" radius="1.5" width="0.2" layer="94"/>
 </symbol>
 <symbol name="LED">
-<circle x="0" y="3" radius="2.5" width="0.2" layer="94"/>
+<circle x="0" y="3.1" radius="2.5" width="0.2" layer="94"/>
 </symbol>
 <symbol name="BUTTON">
 <circle x="0" y="4.05" radius="1.7" width="0.2" layer="94"/>
@@ -518,6 +522,9 @@
 <wire x1="-14.71" y1="-8.35" x2="-15.71" y2="-7.35" width="0.2" layer="94" curve="-90"/>
 <wire x1="-15.71" y1="-7.35" x2="-15.71" y2="7.35" width="0.2" layer="94"/>
 <wire x1="-15.71" y1="7.35" x2="-14.71" y2="8.35" width="0.2" layer="94" curve="-90"/>
+</symbol>
+<symbol name="CBI_RGB_LED">
+<circle x="0" y="3.75" radius="2.5" width="0.2" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -677,6 +684,19 @@ The origin is centered on the top surface of the PCB</description>
 </gates>
 <devices>
 <device name="" package="OLED-1.3-128X64">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CBI_RGB_LED_LED-20286">
+<description>This is the enclosure panel cut-out for the 5mm right angle CBI RGB LED (LED-20286, COM-23649)</description>
+<gates>
+<gate name="G$1" symbol="CBI_RGB_LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CBI_RGB_LED">
 <technologies>
 <technology name=""/>
 </technologies>
